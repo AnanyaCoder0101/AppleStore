@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store</title>
+    <style>
+        .head{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 70px;
+            padding-top: 5%;
+        }
+        .slogan{
+            padding-top: 2%;
+            font-size: 20px;
+        }
+        .logo{
+             width: 100px;
+             padding-top: 2%;
+        }
+         a{
+            text-decoration: none;
+            color: black;
+        }
+        .card{ width: 400px;
+            margin: 20px;
+            height: 520px;
+            border:2px solid rgba(0, 0, 0, 0.459);
+            border-radius: 10px;
+            img{
+                height: 200px;
+                margin-top: 40px;
+            }
+            p{
+                font-size: 19px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .price{
+                font-size: 35px;
+                text-align: left;
+                padding: 20px;
+                padding-left: 40px;
+                margin-top: 30px;
+            }
+            .rating{
+                margin-left: auto;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                font-size: 20px;
+                text-align: right;
+            }
+        }
+            .cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="head"><b>Apple Store </b></div>
+        <div class="slogan"><b><i>Say Hello to the future</i></b></div>
+        <img class="logo" src="data:image/jpeg;base64,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"></div>
+    
+        <h1>See all the products!</h1>
+
+        <div class="cards">
+            <a href="https://www.amazon.in/Apple-MacBook-13-inch-10-core-Unified/dp/B0DZDDV7GC/ref=sr_1_3?crid=3SN6ZB3J3OYW9&dib=eyJ2IjoiMSJ9.rQ_c4cfZ0GB0XziMu5xJLGVJ1EMbexLdLOgPtZRzftWnimeAe7nMLnJpePzjHfdY6T2_hARTQKSNeCuD9RDGLFHuGgQXHVq4Tnh4XUzRRTGtLslKcW0ZjHIquMUvLrZXyK5tU5cWSexSuF55LZY_L2gSPEjHnsW3JfD3UXht0pf4_GdsRppxP3gRCqt6Qe4is6oX1OTHcXXj0l2znjDAaGSSbkRwdoUVSOVVy2qWHKc.9iUFC4RYB_HQ8c4UEcByPlYJjI4NuqnFkYVAPVYblWs&dib_tag=se&keywords=iphones%2C+macbooks&qid=1774166093&sprefix=iphones%2C+mac%2Caps%2C392&sr=8-3">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71CjP9jmqZL._AC_UY436_FMwebp_QL65_.jpg">
+                    <p><b>Apple 2025 MacBook Air (13-inch, Apple M4 chip with 10-core CPU and 8-core GPU, 16GB Unified Memory, 256GB) - Midnight</b></p>
+                    <div class="down">
+                        <div class="price">$ 400</div>
+                        <div class="rating">4.5 ⭐⭐⭐⭐⭐ </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.amazon.in/Apple-MacBook-15-inch-10-core-Unified/dp/B0DZDG4RMG/ref=sr_1_5?crid=3SN6ZB3J3OYW9&dib=eyJ2IjoiMSJ9.rQ_c4cfZ0GB0XziMu5xJLGVJ1EMbexLdLOgPtZRzftWnimeAe7nMLnJpePzjHfdY6T2_hARTQKSNeCuD9RDGLFHuGgQXHVq4Tnh4XUzRRTGtLslKcW0ZjHIquMUvLrZXyK5tU5cWSexSuF55LZY_L2gSPEjHnsW3JfD3UXht0pf4_GdsRppxP3gRCqt6Qe4is6oX1OTHcXXj0l2znjDAaGSSbkRwdoUVSOVVy2qWHKc.9iUFC4RYB_HQ8c4UEcByPlYJjI4NuqnFkYVAPVYblWs&dib_tag=se&keywords=iphones%2C+macbooks&qid=1774166093&sprefix=iphones%2C+mac%2Caps%2C392&sr=8-5">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71gn83R0DPL._AC_UY436_FMwebp_QL65_.jpg">
+                    <p><b>Apple 2026 MacBook Air 13″ Laptop with M5 chip: AI and Apple Intelligence, 34.46 cm (13.6″) Liquid Retina Display, 16GB Unified Memory, 512GB</b></p>
+                    <div class="down">
+                        <div class="price">$ 600</div>
+                        <div class="rating">4.5 ⭐⭐⭐⭐⭐ </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.amazon.in/Apple-2026-MacBook-Laptop-chip/dp/B0GR68779Y/ref=sr_1_6?crid=3SN6ZB3J3OYW9&dib=eyJ2IjoiMSJ9.rQ_c4cfZ0GB0XziMu5xJLGVJ1EMbexLdLOgPtZRzftWnimeAe7nMLnJpePzjHfdY6T2_hARTQKSNeCuD9RDGLFHuGgQXHVq4Tnh4XUzRRTGtLslKcW0ZjHIquMUvLrZXyK5tU5cWSexSuF55LZY_L2gSPEjHnsW3JfD3UXht0pf4_GdsRppxP3gRCqt6Qe4is6oX1OTHcXXj0l2znjDAaGSSbkRwdoUVSOVVy2qWHKc.9iUFC4RYB_HQ8c4UEcByPlYJjI4NuqnFkYVAPVYblWs&dib_tag=se&keywords=iphones%2C+macbooks&qid=1774166093&sprefix=iphones%2C+mac%2Caps%2C392&sr=8-6">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/61N2I4e0PNL._AC_UY436_FMwebp_QL65_.jpg">
+                    <p><b>Apple 2026 MacBook Neo 13″ Laptop with A18 Pro chip: Built for AI and Apple Intelligence, Liquid Retina Display, 8GB Unified Memory</b></p>
+                    <div class="down">
+                        <div class="price">$ 860</div>
+                        <div class="rating">4.5 ⭐⭐⭐⭐⭐ </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.amazon.in/Apple-2026-MacBook-Laptop-chip/dp/B0GR67GHSV/ref=sr_1_7?crid=3SN6ZB3J3OYW9&dib=eyJ2IjoiMSJ9.rQ_c4cfZ0GB0XziMu5xJLGVJ1EMbexLdLOgPtZRzftWnimeAe7nMLnJpePzjHfdY6T2_hARTQKSNeCuD9RDGLFHuGgQXHVq4Tnh4XUzRRTGtLslKcW0ZjHIquMUvLrZXyK5tU5cWSexSuF55LZY_L2gSPEjHnsW3JfD3UXht0pf4_GdsRppxP3gRCqt6Qe4is6oX1OTHcXXj0l2znjDAaGSSbkRwdoUVSOVVy2qWHKc.9iUFC4RYB_HQ8c4UEcByPlYJjI4NuqnFkYVAPVYblWs&dib_tag=se&keywords=iphones%2C+macbooks&qid=1774166093&sprefix=iphones%2C+mac%2Caps%2C392&sr=8-7">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/61dLund7bhL._AC_UY436_FMwebp_QL65_.jpg">
+                    <p><b>Apple 2026 MacBook Neo 13″ Laptop with A18 Pro chip: Built for AI and Apple Intelligence, Liquid Retina Display, 8GB Unified Memory</b></p>
+                    <div class="down">
+                        <div class="price">$ 349</div>
+                        <div class="rating">4.5 ⭐⭐⭐⭐⭐ </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.amazon.in/Apple-2025-MacBook-Laptop-10%E2%80%91core/dp/B0FWD8F8TN/ref=sr_1_10?crid=3SN6ZB3J3OYW9&dib=eyJ2IjoiMSJ9.rQ_c4cfZ0GB0XziMu5xJLGVJ1EMbexLdLOgPtZRzftWnimeAe7nMLnJpePzjHfdY6T2_hARTQKSNeCuD9RDGLFHuGgQXHVq4Tnh4XUzRRTGtLslKcW0ZjHIquMUvLrZXyK5tU5cWSexSuF55LZY_L2gSPEjHnsW3JfD3UXht0pf4_GdsRppxP3gRCqt6Qe4is6oX1OTHcXXj0l2znjDAaGSSbkRwdoUVSOVVy2qWHKc.9iUFC4RYB_HQ8c4UEcByPlYJjI4NuqnFkYVAPVYblWs&dib_tag=se&keywords=iphones%2C+macbooks&qid=1774166093&sprefix=iphones%2C+mac%2Caps%2C392&sr=8-10">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/61L3QBZ7Q+L._AC_UY436_FMwebp_QL65_.jpg">
+                    <p><b>Apple 2026 MacBook Pro Laptop with M5 Max chip with 18‑core CPU and 40‑core GPU: Built for AI, 41.05 cm (16.2″) Liquid Retina</b></p>
+                    <div class="down">
+                        <div class="price">$ 999</div>
+                        <div class="rating">4.5 ⭐⭐⭐⭐⭐ </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.amazon.in/Apple-2026-MacBook-Laptop-chip/dp/B0GR64G4H6/ref=sr_1_9?crid=3SN6ZB3J3OYW9&dib=eyJ2IjoiMSJ9.rQ_c4cfZ0GB0XziMu5xJLGVJ1EMbexLdLOgPtZRzftWnimeAe7nMLnJpePzjHfdY6T2_hARTQKSNeCuD9RDGLFHuGgQXHVq4Tnh4XUzRRTGtLslKcW0ZjHIquMUvLrZXyK5tU5cWSexSuF55LZY_L2gSPEjHnsW3JfD3UXht0pf4_GdsRppxP3gRCqt6Qe4is6oX1OTHcXXj0l2znjDAaGSSbkRwdoUVSOVVy2qWHKc.9iUFC4RYB_HQ8c4UEcByPlYJjI4NuqnFkYVAPVYblWs&dib_tag=se&keywords=iphones%2C+macbooks&qid=1774166093&sprefix=iphones%2C+mac%2Caps%2C392&sr=8-9">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/61vTx-Qa1QL._AC_UY436_FMwebp_QL65_.jpg">
+                    <p><b>Apple 2026 MacBook Neo 13″ Laptop with A18 Pro chip: Built for AI and Apple Intelligence, Liquid Retina Display, 8GB Unified Memory</b></p>
+                    <div class="down">
+                        <div class="price">$ 799</div>
+                        <div class="rating">4.5 ⭐⭐⭐⭐⭐ </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.amazon.in/Apple-2026-MacBook-laptop-chip/dp/B0GR1G3C3X/ref=sr_1_20?crid=Z6KS4VN0ZJL&dib=eyJ2IjoiMSJ9.K82xbzQD4IuWVFDil_fDbTtoIoXygChsJUFfq6ZUz4qec_IqSCv9GKMWaDjOUCk09d9Wfd7040UUt_uxiR8_XeccDAzFdGiy2I_8vG_P9hxICK1pUBaTuN4v6cI9cZH3b9Ittqhzxqh1tCyphsgjJYazIOnTiCGL5JOOqrZAQA6F9ytCgxz7iQWaaZFk9erMKbl_tkHM4zCkzsVyV8ekFXt5kAgOFTh-tD7HyyX-qSI.Gxum65nRNZ8jOpv9MwJQ2JDV9KN3iNx_DtHacXUbkKk&dib_tag=se&keywords=macbooks&qid=1774167652&sprefix=macbo%2Caps%2C408&sr=8-20">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71OjWwgFuEL._AC_UY436_FMwebp_QL65_.jpg">
+                    <p><b>Apple 2026 MacBook Pro Laptop with M5 Max chip with 18‑core CPU and 40‑core GPU: Built for AI, 41.05 cm (16.2″) Liquid Retina XDR</b></p>
+                    <div class="down">
+                        <div class="price">$ 899</div>
+                        <div class="rating">4.5 ⭐⭐⭐⭐⭐ </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo4MjkzODMxMzY3NjEwMzAzOjE3NzQxNjc3MTQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDc5NDYxMzQ1NzMzMjo6MTo6&url=%2FApple-2025-MacBook-Laptop-10%25E2%2580%2591core%2Fdp%2FB0FWD8F8TN%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.7e2c8ac4-9f12-4bcd-9497-a8ae54bc8764%253Aamzn1.sym.7e2c8ac4-9f12-4bcd-9497-a8ae54bc8764%26crid%3D341VCDKIR0GK0%26cv_ct_cx%3Dmacbook%2Bm5%26keywords%3Dmacbook%2Bm5%26pd_rd_i%3DB0FWD8F8TN%26pd_rd_r%3D074ef17e-d840-44a5-8f25-d00048953ea8%26pd_rd_w%3Dtn4eB%26pd_rd_wg%3DfJ05s%26pf_rd_p%3D7e2c8ac4-9f12-4bcd-9497-a8ae54bc8764%26pf_rd_r%3D0QAGRZJ0FQ908NHHXX0S%26qid%3D1774167714%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dmacbook%2Bm%252Caps%252C430%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3Dg3zWgxboe8%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=g3zWgxboe8&sp_cr=ZAZ">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/61L3QBZ7Q+L._AC_UL640_FMwebp_QL65_.jpg">
+                    <p><b>Apple 2025 MacBook Air (13-inch, Apple M4 chip with 10-core CPU and 8-core GPU, 16GB Unified Memory, 256GB) - Midnight</b></p>
+                    <div class="down">
+                        <div class="price">$ 499</div>
+                        <div class="rating">4.5 ⭐⭐⭐⭐⭐ </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.amazon.in/Apple-MacBook-13-inch-10-core-Unified/dp/B0DZDDV7GC/ref=sr_1_3?crid=3SN6ZB3J3OYW9&dib=eyJ2IjoiMSJ9.rQ_c4cfZ0GB0XziMu5xJLGVJ1EMbexLdLOgPtZRzftWnimeAe7nMLnJpePzjHfdY6T2_hARTQKSNeCuD9RDGLFHuGgQXHVq4Tnh4XUzRRTGtLslKcW0ZjHIquMUvLrZXyK5tU5cWSexSuF55LZY_L2gSPEjHnsW3JfD3UXht0pf4_GdsRppxP3gRCqt6Qe4is6oX1OTHcXXj0l2znjDAaGSSbkRwdoUVSOVVy2qWHKc.9iUFC4RYB_HQ8c4UEcByPlYJjI4NuqnFkYVAPVYblWs&dib_tag=se&keywords=iphones%2C+macbooks&qid=1774166093&sprefix=iphones%2C+mac%2Caps%2C392&sr=8-3">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71CjP9jmqZL._AC_UY436_FMwebp_QL65_.jpg">
+                    <p><b>Apple 2025 MacBook Air (13-inch, Apple M4 chip with 10-core CPU and 8-core GPU, 16GB Unified Memory, 256GB) - Midnight</b></p>
+                    <div class="down">
+                        <div class="price">$ 599</div>
+                        <div class="rating">4.5 ⭐⭐⭐⭐⭐ </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </center>
+</body>
+</html>
